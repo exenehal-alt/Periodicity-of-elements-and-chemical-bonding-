@@ -1,0 +1,6 @@
+{
+  "name": "রসায়ন পর্যায়বৃত্ত",
+  "description": "মৌলসমূহের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধনের ২৮টি টাইপের পূর্ণাঙ্গ প্রস্তুতি, আনলিমিটেড টাইমার, লিডারবোর্ড ও প্রোফাইল",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

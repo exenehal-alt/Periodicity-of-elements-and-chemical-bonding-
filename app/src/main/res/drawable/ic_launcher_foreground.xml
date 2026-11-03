@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center chemistry flask & atom motif within safe 66dp zone (from 21 to 87) -->
+    <!-- Lab Flask body -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M50,30 L58,30 L58,40 L69.5,60 C71.5,63.5 69,68 65,68 L43,68 C39,68 36.5,63.5 38.5,60 L50,40 Z" />
+    <!-- Flask Liquid with vibrant cyan -->
+    <path
+        android:fillColor="#06B6D4"
+        android:pathData="M44.5,52 L63.5,52 L67,61 C68,63.5 66.5,66 64,66 L44,66 C41.5,66 40,63.5 41,61 Z" />
+    <!-- Liquid glow reflection -->
+    <path
+        android:fillColor="#67E8F9"
+        android:pathData="M44,62 C44,60 48,58 54,58 C60,58 64,60 64,62 C64,64 60,65 54,65 C48,65 44,64 44,62 Z" />
+    <!-- Bubbles -->
+    <path
+        android:fillColor="#A5F3FC"
+        android:pathData="M52,47 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0" />
+    <path
+        android:fillColor="#CFFAFE"
+        android:pathData="M57,41 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+    <path
+        android:fillColor="#CFFAFE"
+        android:pathData="M48,37 m-1.2,0 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
+    <!-- Flask lip and neck rim -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:pathData="M48,27 L60,27 C61,27 61.5,28 61.5,29 C61.5,30 61,31 60,31 L48,31 C47,31 46.5,30 46.5,29 C46.5,28 47,27 48,27 Z" />
+    <!-- Orbiting rings of an atom -->
+    <path
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000"
+        android:pathData="M30,54 C30,44 78,44 78,54 C78,64 30,64 30,54 Z" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000"
+        android:pathData="M36,37 C44,28 72,70 64,79 C56,88 28,46 36,37 Z" />
+    <!-- Electrons on orbits -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M78,54 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#34D399"
+        android:pathData="M37,38 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+</vector>
