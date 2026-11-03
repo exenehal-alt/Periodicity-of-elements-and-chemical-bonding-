@@ -64,6 +64,7 @@ import androidx.compose.ui.unit.sp
 import com.example.data.model.Achievement
 import com.example.data.model.TimerMode
 import com.example.ui.components.AvatarHelper
+import com.example.ui.components.RechartsStyleVisualizer
 import com.example.ui.components.UserAvatarView
 import com.example.ui.theme.CorrectGreen
 import com.example.ui.viewmodel.MainViewModel
@@ -126,6 +127,15 @@ fun ProfileScreen(
                     accuracy = userProfile.accuracy,
                     streakDays = userProfile.streakDays,
                     completedTypes = userProfile.completedTypes.size
+                )
+            }
+
+            // 📊 Recharts Style Visualization & 28 Chemical Bond Topics Table
+            item {
+                RechartsStyleVisualizer(
+                    userProfile = userProfile,
+                    getTypeStats = { typeId -> viewModel.repository.getTypeStats(typeId) },
+                    onNavigateToType = onNavigateToType
                 )
             }
 

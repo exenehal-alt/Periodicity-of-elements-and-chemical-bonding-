@@ -40,5 +40,8 @@ data class QuestionTypeInfo(
     val subtitle: String,
     val isWritten: Boolean = false,
     val difficulty: Difficulty = Difficulty.MEDIUM,
-    val totalQuestions: Int = 0
+    val totalQuestions: Int = 0,
+    val starMark: String? = null,
+    val sessions: String = "",
+    val cluster: Int = 1
 )

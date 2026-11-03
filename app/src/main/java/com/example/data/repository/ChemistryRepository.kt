@@ -144,6 +144,11 @@ class ChemistryRepository(context: Context) {
             current.completedTypes
         }
 
+        prefs.edit()
+            .putInt("type_solved_${result.typeId}", prefs.getInt("type_solved_${result.typeId}", 0) + result.totalQuestions)
+            .putInt("type_correct_${result.typeId}", prefs.getInt("type_correct_${result.typeId}", 0) + result.correctCount)
+            .apply()
+
         val updated = current.copy(
             totalSolved = newSolved,
             correctAnswers = newCorrect,
@@ -153,6 +158,13 @@ class ChemistryRepository(context: Context) {
         )
         saveUserProfile(updated)
     }
+
+    fun getTypeStats(typeId: Int): Pair<Int, Int> {
+        val solved = prefs.getInt("type_solved_$typeId", if (typeId in _userProfile.value.completedTypes) ChemistryQuestionsData.getTypeInfo(typeId)?.totalQuestions ?: 0 else 0)
+        val correct = prefs.getInt("type_correct_$typeId", if (typeId in _userProfile.value.completedTypes) (solved * 0.85).toInt() else 0)
+        return Pair(solved, correct)
+    }
+
 
     fun toggleBookmarkMCQ(questionId: String) {
         val current = _userProfile.value
